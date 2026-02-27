@@ -1,17 +1,22 @@
 # AgentMail CLI
 
+[![npm version](https://img.shields.io/npm/v/openclaw-agentmail-cli.svg)](https://www.npmjs.com/package/openclaw-agentmail-cli)
+[![CI](https://github.com/agentmail-to/agentmail-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/agentmail-to/agentmail-cli/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
+
 CLI tool for [AgentMail](https://agentmail.to) - scalable, API-first email accounts for AI agents.
 
 ## Installation
 
 ```bash
-npm install -g agentmail-cli
+npm install -g openclaw-agentmail-cli
 ```
 
 Or use directly with npx:
 
 ```bash
-npx agentmail-cli inboxes list
+npx openclaw-agentmail-cli inboxes list
 ```
 
 ## Setup

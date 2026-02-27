@@ -1,0 +1,43 @@
+{
+  "name": "agentmail-cli",
+  "version": "1.0.0",
+  "description": "CLI for AgentMail - Email accounts for AI agents",
+  "type": "module",
+  "bin": {
+    "agentmail": "./bin/agentmail.js",
+    "agentmail-mcp": "./bin/agentmail-mcp.js"
+  },
+  "scripts": {
+    "start": "node bin/agentmail.js",
+    "start:mcp": "node bin/agentmail-mcp.js",
+    "build:mcp": "npx mcporter generate-cli agentmail --output ./dist/agentmail --name agentmail",
+    "build:mcp:binary": "npx mcporter generate-cli agentmail --output ./dist/agentmail --compile --name agentmail",
+    "list-tools": "npx mcporter list agentmail --all-parameters",
+    "test:mcp": "npx mcporter call agentmail.list_inboxes"
+  },
+  "keywords": [
+    "agentmail",
+    "email",
+    "cli",
+    "mcp",
+    "ai-agents"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://agentmail.to",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agentmail-to/agentmail-cli.git"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "agentmail": "^0.3.3",
+    "commander": "^14.0.3",
+    "mcporter": "^0.7.3"
+  },
+  "devDependencies": {
+    "agentmail-mcp": "^0.2.1"
+  }
+}
